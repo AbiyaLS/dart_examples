@@ -17,3 +17,20 @@ class Cookie{
     return false;
   }
 }
+// ------------------------------OBJECT---------------------------
+void main(){
+ final cookie =Cookie();
+//   cookie(instance of class) => Object
+//   mostly we use final as the datatype for the object
+  cookie.baking();
+}
+class Cookie{
+  String shape ="Circle";
+  double size =10.5; //cm
+   void baking(){
+     print ("Baking is started");
+   }
+  bool isCoolng(){
+    return false;
+  }
+}
