@@ -34,3 +34,29 @@ class Cookie{
     return false;
   }
 }
+// -------------------Constructor ---------------------------------
+void main(){
+ final cookie =Cookie("circle",10.3);
+print(cookie.shape);
+  print(cookie.size);
+
+}
+class Cookie{
+  String? shape="Rectangle";
+  double? size=15.3; //cm
+// -----------------  parameterized constructor--------------------
+  Cookie(String shape,double size){
+    //this help to store the value to the variable
+    print(this.shape); 
+    this.shape = shape; this.size= size;
+    print("Cookie constructer created");
+    baking();
+  }
+   void baking(){
+     print ("Baking is started");
+   }
+  bool isCoolng(){
+    return false;
+  }
+}
+
