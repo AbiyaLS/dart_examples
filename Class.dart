@@ -59,4 +59,48 @@ class Cookie{
     return false;
   }
 }
+//   -----------------------------named constructor---------------------------------------------
+void main(){
+ final cookie =Cookie(shape: "circle",size:10.3);
+print(cookie.shape);
+  print(cookie.size);
 
+}
+class Cookie{
+//   when we use final datatype then the value didn't change in the instance of oclass
+ final String shape;
+ final double  size; //cm
+
+  Cookie( {required this.shape,required this.size}){
+    print("Cookie constructer created");
+    baking();
+  }
+   void baking(){
+     print ("cookie of $shape with size $size");
+   }
+  bool isCoolng(){
+    return false;
+  }
+}
+// -------------------INHERITANCE ---------------------------------
+// THE CHILD CLASS INHERIT THE PROPERTIES OF THE PARENT  CLASS
+
+void main(){
+  Car car =Car();
+  car.printSomething();
+}
+
+class Vechile{
+  
+  bool isFuel =false;
+  double speed = 10;
+  void accelerate(){
+    speed +=10;
+  }
+}
+class Car extends Vechile{
+ int noOfWheels =4;
+  void printSomething(){
+    print(noOfWheels);
+  }
+}
