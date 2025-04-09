@@ -1,6 +1,6 @@
 // -------------------INHERITANCE ---------------------------------
 // THE CHILD CLASS INHERIT THE PROPERTIES OF THE PARENT  CLASS
-
+// -------------------------------------EXTENDS-------------------------------------
 void main(){
    final bike =Bike();
   bike.accelerate();
@@ -26,5 +26,28 @@ class Car extends Vechile{
 
 }
 class Bike extends Car{
-
 }
+
+// --------------------------------IMPLEMENTS----------------------------
+void main() {
+  final dog = Dog();
+  dog.makeSound();
+}
+ 
+class Animal {
+  bool isCarnivours = false;
+  void makeSound() {}
+}
+// in this case we want override every variable in the parent class
+class Dog implements Animal {
+  @override
+  bool isCarnivours = true;
+    @override
+  void makeSound() {
+    print("Huff Huff");
+  }
+}
+
+
+
+
