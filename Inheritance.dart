@@ -47,7 +47,9 @@ class Dog implements Animal {
     print("Huff Huff");
   }
 }
+/*  class Class1 extends Class2 implements Class3   =>    It is posible in the dart 
 
+super keyword=> it is instance of the parent class we can use in the child class
 
 
 
