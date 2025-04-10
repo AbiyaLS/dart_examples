@@ -5,8 +5,11 @@
  *  List variablename =[list1,list2] 
  * indexing start from 0 to n-1
  **/
+// Set
+//    syntax
+//    Set variable_name = {item1,item2 ,.......};
+// set doesn't allow repeations that was the main difference of set and list and also the braces
 
-----------------------------Questions-----------------------------
 
 void main(){
    final removeRihaan =Student("Rihaan");
@@ -36,7 +39,7 @@ class Student{
   @override
  String toString()=> "student:$name"; 
 }
-
+// ----------------------------Questions-----------------------------
 void main(){
 //   i want students list who have the mark grater than 20
   
