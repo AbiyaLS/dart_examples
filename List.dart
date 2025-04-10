@@ -86,5 +86,5 @@ class Student{
   Student(this.name,this.marks);
   @override
  String toString()=> "student:$name, marks: $marks";
- 
+   
 }
